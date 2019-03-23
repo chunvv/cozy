@@ -1,0 +1,42 @@
+
+.dashboard-main-content {
+  padding-top: 7em;
+  padding-bottom: 2em;
+  padding-left: 22px;
+}
+
+@media (min-width: $screen-sm-min) {
+  .dashboard-main-content {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+}
+
+body.dashboards.show,
+body.dashboards.bookmarks,
+body.dashboards.top_stories {
+  .main-container {
+    background: $white;
+  }
+  .posts-wrapper > .post-panel {
+    background: $white;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0,0,0, 0.09);
+    @include box-shadow;
+    box-shadow: 0 1px 4px rgba(0,0,0, 0.07);
+    @include border-radius($radius);
+  }
+}
+
+body.dashboards.top_stories {
+  .top-story-rank {
+    padding-bottom: 1.2em;
+  }
+  .count-button-wrapper {
+    margin: auto;
+    width: 40px;
+    height: 40px;
+  }
+}
